@@ -9,6 +9,9 @@ This is a bot that generates text using a Markov chain.
 Then it posts it to random hot posts on a specified list of subreddits.
 
 
+### Why?
+
+
 ### How do I use it?
 Beautiful question!
 
@@ -17,12 +20,16 @@ Beautiful question!
 ```
 username=
 password=
-client=
+client_id=
 secret=
 user_agent=
 ```
-3. Set any configuration options in the .env file.
-4. Run the bot.
+3. Install the dependencies.
+```bash
+pip3 install -r requirements.txt
+```
+4. Set any configuration options in the .env file.
+5. Run the bot.
 ```bash
 python3 bot.py
 ```
