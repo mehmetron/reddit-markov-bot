@@ -10,6 +10,7 @@ Then it posts it to random hot posts on a specified list of subreddits.
 
 
 ### Why?
+Just to show everyone, if a dumbo with a potato for a computer can do it then a state actor with billions of $$$ can probably do it undetected.
 
 
 ### How do I use it?
@@ -28,8 +29,7 @@ user_agent=
 ```bash
 pip3 install -r requirements.txt
 ```
-4. Set any configuration options in the .env file.
-5. Run the bot.
+4. Run the bot.
 ```bash
 python3 bot.py
 ```

@@ -263,11 +263,11 @@ class Bot:
 if __name__ == '__main__':
     load_dotenv()
 
-    secret = os.environ['secret']
-    client_id = os.environ['client_id']
-    user_agent = os.environ['user_agent']
     username = os.environ['username']
     password = os.environ['password']
+    client_id = os.environ['client_id']
+    secret = os.environ['secret']
+    user_agent = os.environ['user_agent']
 
     obj1 = Bot(username, password, client_id, secret, user_agent)
 
