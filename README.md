@@ -25,11 +25,17 @@ client_id=
 secret=
 user_agent=
 ```
-3. Install the dependencies.
+3. Setup virtual env
+```
+pip3 install virtualenv
+python3 -m venv env
+source env/bin/activate
+```
+4. Install the dependencies.
 ```bash
 pip3 install -r requirements.txt
 ```
-4. Run the bot.
+5. Run the bot.
 ```bash
 python3 bot.py
 ```
