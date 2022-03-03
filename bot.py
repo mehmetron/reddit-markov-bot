@@ -242,13 +242,13 @@ class Bot:
             val = random.random()
             print(Fore.BLUE + "dice roll: ", val)
 
-            if (val < 0.02):
+            if (val < 0.1):
                 self.scrape_comments_from_subreddits()
-            elif (val > 0.02 and val < 0.04):
+            elif (val > 0.1 and val < 0.12):
                 name = self._get_random_subreddit()
                 text_model = self._learn_from_subreddit(name)
                 self.comment_on_post(text_model, name)
-            elif (val > 0.04 and val < 0.06):
+            elif (val > 0.12 and val < 0.14):
                 self._detect_shadow_banned()
 
             self._delete_bad_comments()
@@ -285,3 +285,8 @@ if __name__ == '__main__':
     # #3
     obj1.probability_based_run()
 
+
+    # TODO: Create data dir if not exist (usually if running for first time)
+    # TODO: Put action probabilities in separate config file
+    # TODO: Organize into separate files
+    
